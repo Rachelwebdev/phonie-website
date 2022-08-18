@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Phonie</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <!--Phonielogo-->
+        <div class="logo">
+          <img src="./images/Phonie logo.png" alt="phonie" />
+        </div>
+
+        <!--NAV BAR-->
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html">PURCHASE</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- FORM -->
+      <h1 class="instruction">
+        Kindly fill out all your details correctly <br />
+        and proceed to payment
+      </h1>
+      <div class="form-container">
+        <form action="" id="purchase-form">
+          <input
+            type="text"
+            name=""
+            required
+            placeholder="Full Name"
+            id="full-name"
+          />
+          <input
+            type="email"
+            name=""
+            required
+            placeholder="Email"
+            id="user-email"
+          />
+          <input
+            type="text"
+            name=""
+            required
+            placeholder="Airtime"
+            id="airtime-amount"
+          />
+          <div class="user-number">
+            <input
+              type="text"
+              name=""
+              required
+              placeholder="Phone Number"
+              id="Phone-number"
+            />
+            <div class="network-logo"></div>
+          </div>
+        </form>
+        <div class="payment_section">
+          <img src="./images/paystack logo.jpg" alt="paystack-image" />
+          <button class="btn btn-pay">PAY</button>
+          <button class="btn btn-cancel">CANCEL</button>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer id="contact">
+        <div class="twitter">
+          <img src="./images/twitter-logo.png" alt="" />
+          <p>@Circle60</p>
+        </div>
+
+        <div class="email">
+          <img src="./images/email-logo.png" alt="" />
+          <p>circle-60@gmail.com</p>
+        </div>
+
+        <div class="telephone">
+          <img src="./images/phone-logo.png" alt="" />
+          <p>+2348125647912</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- displays when payment is successful -->
+    <div id="message">
+      <h1 class="text">
+        <!-- Hello {fullname}, <br />
+        you have succesfully purchased <br />
+        # {amount} airtime from Phonie 🎉 -->
+      </h1>
+      <h4 class="note">
+        You have been added to our email list <br />
+        to receive updates on our packages.📧
+      </h4>
+      <button class="btn btn-close close-message">CLOSE</button>
+    </div>
+
+    <!-- Displays when user clicks cancel or has completed purchase -->
+    <div class="goodbye-message">
+      <h1 class="goodbye-text"></h1>
+      <h3 class="goodbye-note">Hope to see you again soon 🙂</h3>
+      <button class="btn btn-close close-goodbye">CLOSE</button>
+    </div>
+  </body>
+</html>
